@@ -1,6 +1,7 @@
 # Realtime Data Streaming | End-to-End Data Engineering Project
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [System Architecture](#system-architecture)
 - [What You'll Learn](#what-youll-learn)
@@ -14,7 +15,7 @@ This project serves as a comprehensive guide to building an end-to-end data engi
 
 ## System Architecture
 
-![System Architecture](https://github.com/airscholar/e2e-data-engineering/blob/main/Data%20engineering%20architecture.png)
+![System Architecture](https://github.com/SaklyFiras/E2E-Data-Engineering-Pipeline/blob/main/Data%20engineering%20architecture.png)
 
 The project is designed with the following components:
 
@@ -48,17 +49,18 @@ The project is designed with the following components:
 ## Getting Started
 
 1. Clone the repository:
-    ```bash
-    git clone hhttps://github.com/SaklyFiras/E2E-Data-Engineering-Pipeline.git
-    ```
+
+   ```bash
+   git clone https://github.com/SaklyFiras/E2E-Data-Engineering-Pipeline.git
+   ```
 
 2. Navigate to the project directory:
-    ```bash
-    cd e2e-data-engineering
-    ```
+
+   ```bash
+   cd E2E-Data-Engineering-Pipeline
+   ```
 
 3. Run Docker Compose to spin up the services:
-    ```bash
-    docker-compose up
-    ```
-
+   ```bash
+   docker-compose up
+   ```
