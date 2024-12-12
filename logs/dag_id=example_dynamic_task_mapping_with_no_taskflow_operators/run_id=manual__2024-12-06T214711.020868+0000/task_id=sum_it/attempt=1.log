@@ -1,0 +1,28 @@
+[2024-12-06T21:47:18.509+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-06T21:47:18.533+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dynamic_task_mapping_with_no_taskflow_operators.sum_it manual__2024-12-06T21:47:11.020868+00:00 [queued]>
+[2024-12-06T21:47:18.542+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dynamic_task_mapping_with_no_taskflow_operators.sum_it manual__2024-12-06T21:47:11.020868+00:00 [queued]>
+[2024-12-06T21:47:18.543+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-06T21:47:18.564+0000] {taskinstance.py:2889} INFO - Executing <Task(SumItOperator): sum_it> on 2024-12-06 21:47:11.020868+00:00
+[2024-12-06T21:47:18.572+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=180) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-06T21:47:18.574+0000] {standard_task_runner.py:72} INFO - Started process 182 to run task
+[2024-12-06T21:47:18.575+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_dynamic_task_mapping_with_no_taskflow_operators', 'sum_it', 'manual__2024-12-06T21:47:11.020868+00:00', '--job-id', '10', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py', '--cfg-path', '/tmp/tmpio69n4ku']
+[2024-12-06T21:47:18.576+0000] {standard_task_runner.py:105} INFO - Job 10: Subtask sum_it
+[2024-12-06T21:47:18.635+0000] {task_command.py:467} INFO - Running <TaskInstance: example_dynamic_task_mapping_with_no_taskflow_operators.sum_it manual__2024-12-06T21:47:11.020868+00:00 [running]> on host 7ef9882be744
+[2024-12-06T21:47:18.760+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_dynamic_task_mapping_with_no_taskflow_operators' AIRFLOW_CTX_TASK_ID='sum_it' AIRFLOW_CTX_EXECUTION_DATE='2024-12-06T21:47:11.020868+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-06T21:47:11.020868+00:00'
+[2024-12-06T21:47:18.762+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-06T21:47:18.763+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-06T21:47:18.764+0000] {logging_mixin.py:190} INFO - Current task name:sum_it state:running start_date:2024-12-06 21:47:18.533821+00:00
+[2024-12-06T21:47:18.765+0000] {logging_mixin.py:190} INFO - Dag name:example_dynamic_task_mapping_with_no_taskflow_operators and current dag run status:running
+[2024-12-06T21:47:18.765+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-06T21:47:18.775+0000] {logging_mixin.py:190} INFO - Total was 9
+[2024-12-06T21:47:18.796+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-06T21:47:18.797+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=example_dynamic_task_mapping_with_no_taskflow_operators, task_id=sum_it, run_id=manual__2024-12-06T21:47:11.020868+00:00, execution_date=20241206T214711, start_date=20241206T214718, end_date=20241206T214718
+[2024-12-06T21:47:18.811+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-12-06T21:47:18.812+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-12-06T21:47:18.813+0000] {logging_mixin.py:190} INFO - Dag name:example_dynamic_task_mapping_with_no_taskflow_operators queued_at:2024-12-06 21:47:11.062340+00:00
+[2024-12-06T21:47:18.813+0000] {logging_mixin.py:190} INFO - Task hostname:7ef9882be744 operator:SumItOperator
+[2024-12-06T21:47:18.831+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-06T21:47:18.852+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-06T21:47:18.855+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
